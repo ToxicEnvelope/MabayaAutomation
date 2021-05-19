@@ -1,0 +1,54 @@
+# MabayaAutomation
+Simple Automation Exam Solution
+
+---
+
+## Overview
+```
+In order to run the tests in this repository, 
+you'll need to ensure that you're local environmemt 
+is set correctly.
+
+** We use Python3.9.X as base version **
+ 
+follow the desciption below on how to set your environment.
+```
+---
+## Install Python
+```
+In order to install Python3.9.X
+You should navigate to 'https://python.org/downloads'
+and download the latest version.
+```
+---
+## Environment & Dependencies
+```
+You need to create a Virtual Environment for which 
+the source code will need to be run in.
+To create a new virtual environmnet , use the following command:
+
+python3 -m venv /path/to/project/root/folder
+
+-------------------------------------------------------------------------------- 
+
+I've set all the dependencies in one file
+which is located at the ROOT of the project.
+
+The filename is 'requirements.txt' ; 
+In order to install all dependencies you should use the following command:
+
+pip install -r requirements.txt
+```
+---
+## Executing Tests 
+```
+Once you've installed Python3.9.x , 
+created a virtual environment and installed all dependencies 
+it is time to run the automated tests ; 
+
+make sure you're located in the project root folder, 
+then run the following command:
+
+pytest ./tests/                     <- to run all tests
+pytest ./tests/test_my_module.py    <- to run a specific test module
+```

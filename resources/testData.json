@@ -1,0 +1,13 @@
+{
+  "login_url": "https://backoffice.mabaya.com",
+  "login_user": "interviewtestuser3004@mabaya.com",
+  "login_password": "goodLuck!",
+  "api_url": "https://17eac024-8de4-4e85-982e-4f95d52cedd2.mock.pstmn.io",
+  "query_params": [
+    {"storeHash": "cd8def3ab0e5bffccf6aaab750dad84b"},
+    {"signal": "Hanglampen"},
+    {"widgets": "product_page_w1"},
+    {"pageType": "search"},
+    {"cookie": "mbinterviewest"}
+  ]
+}
