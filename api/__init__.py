@@ -18,6 +18,17 @@ class BaseApi:
         except Exception as e:
             return False
 
+    def set_api_query_params(self, params=None):
+        try:
+            if not params:
+                params = self.std.query_params
+            for obj in params:
+                for k, v in obj.items():
+                    self.add_query_param(k, v)
+            return True
+        except Exception as e:
+            return False
+
     def add_query_param(self, key, value):
         try:
             if self.__base_url__[0] == '?':
