@@ -15,8 +15,7 @@ class TestLogin(BaseTest, TestCase):
             self.assertTrue(status)
         except AssertionError as e:
             self.fail(e.with_traceback(e.__traceback__))
-        finally:
-            ...
+
 
 if __name__ == '__main__':
     pytest.main()
