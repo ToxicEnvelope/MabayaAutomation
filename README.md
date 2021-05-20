@@ -40,7 +40,7 @@ In order to install all dependencies you should use the following command:
 pip install -r requirements.txt
 ```
 ---
-## Executing Tests 
+## Executing Tests - UI and Integration 
 ```
 Once you've installed Python3.9.x , 
 created a virtual environment and installed all dependencies 
@@ -49,6 +49,19 @@ it is time to run the automated tests ;
 make sure you're located in the project root folder, 
 then run the following command:
 
+
 pytest ./tests/                     <- to run all tests
 pytest ./tests/test_my_module.py    <- to run a specific test module
+```
+---
+## Executing Tests - Loads
+```
+Once you've installed Python3.9.x , 
+created a virtual environment and installed all dependencies 
+it is time to run the automated tests ;
+
+make sure you're located in the project root folder, 
+then run the following command:
+
+locust -f tests/test_loads.py --host https://17eac024-8de4-4e85-982e-4f95d52cedd2.mock.pstmn.io --headless     <- to run our load tests
 ```
