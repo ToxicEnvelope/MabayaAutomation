@@ -63,5 +63,5 @@ it is time to run the automated tests ;
 make sure you're located in the project root folder, 
 then run the following command:
 
-locust --locustfile tests/test_loads.py --host https://17eac024-8de4-4e85-982e-4f95d52cedd2.mock.pstmn.io --spawn-rate 1 --users 100000 --run-time 5m --show-task-ratio --html --headless     <- to run our load tests
+locust --locustfile tests/test_loads.py --host https://17eac024-8de4-4e85-982e-4f95d52cedd2.mock.pstmn.io --spawn-rate 2 --users 10000 --run-time 3m --html ./test_report.html --headless     <- to run our load tests
 ```
